@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E2FBFF"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/textTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Add Contact's"
+        android:textColor="#563D9B"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="@color/white"
+        >
+
+    </TextView>
+    <EditText
+        android:id="@+id/editname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:hint="Name"
+        android:inputType="text"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/editnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:hint="Number"
+        android:inputType="number"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/ButtonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Add"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        android:backgroundTint="#F6CDCD"
+        >
+
+    </Button>
+
+
+</LinearLayout>

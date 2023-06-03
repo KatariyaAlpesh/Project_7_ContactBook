@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_3"
+    android:orientation="vertical"
+    android:id="@+id/RelativeLayout3"
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/CloseImage3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/close_tic"
+
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New contact"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            >
+
+        </TextView>
+        <ImageView
+            android:id="@+id/SaveContactButton3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/check_tic"
+
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_below="@+id/LinearLayoutNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/profile_image">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ContactsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfileImage"
+        android:gravity="center_horizontal"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ContactsName"
+        android:layout_margin="10dp"
+        android:weightSum="3"
+        >
+
+        <ImageView
+            android:id="@+id/Calling3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/phone_call"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/Message3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/messages"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/VideoCalling3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/video_calling"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LinearLayout1"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/avatar"
+            >
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/AddName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="25sp"
+            android:hint="Add Name">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddNumber"
+        android:layout_below="@+id/LinearLayoutAddName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_call_24"
+            >
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/AddNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddName"
+            android:layout_marginEnd="10dp"
+            android:hint="Add Number"
+            android:inputType="number"
+            android:textSize="25sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddEmail"
+        android:layout_below="@+id/LinearLayoutAddNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_mail_outline_24"
+            >
+
+        </ImageView>
+        <EditText
+            android:id="@+id/AddEmail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddNumber"
+            android:layout_marginEnd="10dp"
+            android:hint="Email"
+            android:textSize="25sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddGroup"
+        android:layout_below="@+id/LinearLayoutAddEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_groups_24"
+            >
+
+        </ImageView>
+        <EditText
+            android:id="@+id/AddGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddEmail"
+            android:layout_marginEnd="15dp"
+            android:hint="Groups"
+            android:textSize="25sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+</RelativeLayout>

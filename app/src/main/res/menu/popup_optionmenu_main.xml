@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/CopyNumber"
+        android:title="Copy Number"
+        >
+    </item>
+
+    <item
+        android:id="@+id/SendSMS"
+        android:title="Send SMS"
+        >
+    </item>
+
+    <item
+        android:id="@+id/AddToBlocklist"
+        android:title="Add To BlockList"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Update"
+        android:title="Update">
+
+    </item>
+
+    <item
+        android:id="@+id/Delete"
+        android:title="Delete">
+
+    </item>
+
+</menu>

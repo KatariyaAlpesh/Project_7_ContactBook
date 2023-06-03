@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainactivity_2.MainActivity_2_Image_Page"
+    android:orientation="vertical"
+    android:id="@+id/RelativeLayout_Main_2_ImagePage"
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/CloseButtonImagePage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_arrow_back_24"
+
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/SaveContactButtonImagePage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/add_user"
+
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_below="@+id/LinearLayoutNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/profile_image">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ContactsNameImagePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProfileImage"
+        android:gravity="center_horizontal"
+        android:text="Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ContactsNameImagePage"
+        android:layout_margin="10dp"
+        android:weightSum="3"
+        >
+
+        <ImageView
+            android:id="@+id/Calling"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/phone_call"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/Message"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/messages"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/VideoCalling"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/video_calling"
+            android:layout_weight="1"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/LinearLayoutAddName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@+id/LinearLayout1"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:src="@drawable/avatar"-->
+<!--            >-->
+
+<!--        </ImageView>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/AddName1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:textSize="25sp"-->
+<!--            android:hint="Add Name">-->
+
+<!--        </EditText>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAddNumber"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/ContactNumber"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_call_24"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/ContactNumberImagePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddName"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

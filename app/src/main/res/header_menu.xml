@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Share"
+        android:title="Share"
+        >
+    </item>
+    <item
+        android:id="@+id/AddVIPcontacts"
+        android:title="Add VIP Contacts"
+        >
+    </item>
+    <item
+        android:id="@+id/AddToBlocklist"
+        android:title="Add To BlockList"
+        >
+    </item>
+    <item
+        android:id="@+id/Sound"
+        android:title="Delete">
+
+    </item>
+    <item
+        android:id="@+id/StareIcon"
+        android:icon="@drawable/star_p_new"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:id="@+id/EditIcon"
+        android:icon="@drawable/baseline_edit_24"
+        app:showAsAction="always">
+
+    </item>
+
+
+</menu>
